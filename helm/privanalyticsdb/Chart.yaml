@@ -1,0 +1,6 @@
+apiVersion: v2
+name: privanalyticsdb
+description: PrivAnalyticsDB – encrypted ClickHouse proxy
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

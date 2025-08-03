@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.3
+    environment:
+      CLICKHOUSE_USER: demo
+      CLICKHOUSE_PASSWORD: demo
+      CLICKHOUSE_DB: demo
+    ports:
+      - "8123:8123"
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "8000:8000"
+    depends_on:
+      - clickhouse
