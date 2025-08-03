@@ -24,6 +24,12 @@ curl -s -H "Authorization: Bearer demo-key-123" \
 ```bash
 {"encrypted_data":"P6H0zWUwkb9c3PrnHiRwaCVkYzK8ymOg","key_id":"40607","iv":"cbmkwKZF0zrDfAEc","algorithm":"AES-256-GCM"}% 
 ```
+
+## launch:
+```bash
+cd proxy
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
 ⸻
 
 # 🔹 Назначение
